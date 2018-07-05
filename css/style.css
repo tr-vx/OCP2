@@ -3,6 +3,7 @@
 p,
 address,a {
     font-family: "Roboto Regular";
+    font-size: 1em;
 }
 
 h1,
@@ -92,7 +93,9 @@ section {
 
 /* ----------- media queries ----- */
 
-@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1280px) {
+    
+}
 
 @media screen and (max-width: 1024px) {
     .container {

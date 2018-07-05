@@ -46,8 +46,12 @@
 
             <!-- les images du slider -->
             <div class="slider__slides">
-                <img class="slider__slide" src="/images/slider/bg1.jpg" alt="slide 1">
-                <img class="slider__slide" src="/images/slider/bg2.jpg" alt="slide 2">
+                <div class="slider__slide">
+                    <img src="/images/slider/bg1.jpg" alt="slide 1">
+                </div>
+                
+                <div class="slider__slide"><img src="/images/slider/bg2.jpg" alt="slide 2"></div>
+                
             </div>
 
             <!-- boutons pour le changement de slide -->
@@ -76,8 +80,10 @@
                 <div class="separator"></div>
                 <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aspernatur cupiditate porro corrupti praesentium tenetur vero, </p>
             </header>
-
-            <img src="/images/main-feature.png" alt="main feature">
+            <div class="services">
+            <aside class="services-img">
+                <img src="/images/main-feature.png" alt="main feature">
+            </aside>
             <ul class="services-list">
                 <li class="services-list__item">
                     <i class="fa fa-chart-line fa-2x fa-stack"></i>
@@ -99,7 +105,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ullam ducimus ipsa repudiandae eos maiores officia deleniti.</p>
                 </li>
             </ul>
-
+        </div><!-- /.services -->
         </div>
         <!-- /.container -->
     </section>
