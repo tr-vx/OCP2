@@ -1,7 +1,7 @@
 /* ------------ slider.css ------------------ */
 
 .slider {
-    position:relative;
+    position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -17,109 +17,160 @@
 }
 
 /* ---- Bloc contenant les slides ---- */
+
 .slider__slides {
+    -webkit-animation: move 20s infinite;
     animation: move 20s infinite;
-    height:550px;
+    height: 550px;
 }
 
 /* Style d'un slide */
+
 .slider__slide {
     position: absolute;
     left: 0;
-    height:100%;
-    
-    
+    height: 100%;
+
+
 }
+
 .slider__slide > img {
-    max-height:100%;
+    max-height: 100%;
 }
+
 /* position du slide 2*/
+
 .slider__slide:nth-child(2) {
     left: 100%;
 }
 
 .slider__inner {}
 
-.slider__nav { /* Bouton de changement de slide  */
-    display:block;
+.slider__nav {
+    /* Bouton de changement de slide  */
+    display: block;
     position: absolute;
     top: 45%;
     border-radius: 50%;
-    color:rgba(255, 255, 255, 0.5);
-    background:rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 30px;
 }
 
-.slider__nav:hover { /* Au survol du bouton */
-    background:rgba(0, 0, 0, 0.7);
-    color:rgba(255, 255, 255, 1);
+.slider__nav:hover {
+    /* Au survol du bouton */
+    background: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 1);
 }
 
-.slider__nav--left { /* bouton de gauche */
+.slider__nav--left {
+    /* bouton de gauche */
     left: -30px;
 }
 
-.slider__nav--right {/* bouton de droite */
+.slider__nav--right {
+    /* bouton de droite */
     right: -30px;
 }
 
-.slider__nav--right > .fa { /* icon dans bouton de gauche (<)  */
-    position:absolute;
-    margin-left:-15px;
-    margin-top:-7px;
+.slider__nav--right > .fa {
+    /* icon dans bouton de gauche (<)  */
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -7px;
 }
-.slider__nav--left > .fa { /* icon dans bouton de droite  (>)  */
-    position:absolute;
-    margin-left:10px;
-    margin-top:-7px;
+
+.slider__nav--left > .fa {
+    /* icon dans bouton de droite  (>)  */
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -7px;
 }
 
 
 .slider__nav::after {}
 
 /* -- Animation automatique du slider -- */
-@keyframes move {
+
+@-webkit-keyframes move {
     0% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
     35% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
     50% {
+        -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
     }
     80% {
+        -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
     }
     95% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
     100% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
 
 }
+
+@keyframes move {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    35% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    50% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    80% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    95% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+}
+
 /* -------------------- Media queries ------------------ */
 
 @media screen and (max-width: 1280px) {
-     .slider__slides, .slider{
+    .slider__slides,
+    .slider {
         max-height: 450px;
     }
 
 }
 
 @media screen and (max-width: 1024px) {
-    .slider__slides, .slider{
+    .slider__slides,
+    .slider {
         max-height: 350px;
     }
-    
+
 
 }
 
 @media screen and (max-width: 768px) {
     .slider__slides .slider {
-        max-height:200px;
+        max-height: 200px;
     }
-    
+
 
 }

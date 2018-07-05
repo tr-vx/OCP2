@@ -3,11 +3,12 @@
 @font-face {
     font-family: "Roboto Bold";
     src: url("../fonts/Roboto-Bold.ttf") format("opentype");
-    
+
 }
+
 @font-face {
     font-family: "Roboto Regular";
-    src:url("../fonts/Roboto-Regular.ttf") format("opentype");
+    src: url("../fonts/Roboto-Regular.ttf") format("opentype");
 }
 
 /* -- Font awesome -- */
@@ -18,9 +19,9 @@
     font-weight: 400;
     src: url(../fonts/fontawesome-webfont.otf);
     src: url(../fonts/fontawesome-webfont.eot?#iefix) format("embedded-opentype"),
-        url(../fonts/fontawesome-webfont.woff) format("woff"),
-        url(../fonts/fontawesome-webfont.ttf) format("truetype"),
-        url(../fonts/fontawesome-webfont.svg#fontawesome) format("svg")
+    url(../fonts/fontawesome-webfont.woff) format("woff"),
+    url(../fonts/fontawesome-webfont.ttf) format("truetype"),
+    url(../fonts/fontawesome-webfont.svg#fontawesome) format("svg")
 }
 
 .fa {
@@ -67,6 +68,7 @@
 
 .fa-rotate-180 {
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg)
 }
 
@@ -92,6 +94,7 @@
 .fa-angle-left:before {
     content: "\f104"
 }
+
 .fa-stack {
     display: inline-block;
     height: 2em;

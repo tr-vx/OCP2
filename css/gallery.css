@@ -11,67 +11,89 @@
 /* Le bloc contenant les differentes cartes*/
 
 .gallery__cards-wrapper {
-    position:relative;
-    width:100%;
+    position: relative;
+    width: 100%;
     height: 570px;
-    
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-line-pack: justify;
     align-content: space-between;
 
 
-    margin-top:40px;
-    
+    margin-top: 40px;
+
 }
 
 
 /* Menu utiliser avec la galerie */
 
 .menu {
-    display:flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     list-style: none;
-    padding:0;
+    padding: 0;
 }
 
 .menu__item {
-    position:relative;
-    width:90px;
-    text-align:center;
-    display:flex;
+    position: relative;
+    width: 90px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .menu__link {
-    display:inline-block;
+    display: inline-block;
     text-decoration: none;
-    flex:1 0 auto;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
 /*  Repére en dessous du bouton actif */
-.menu__link::after{
-    content:" ";
-    position:absolute;
-    
-    bottom:-9px;
-    left:50%;
-    
+
+.menu__link::after {
+    content: " ";
+    position: absolute;
+
+    bottom: -9px;
+    left: 50%;
+
     /* creer un triangle */
     border-left: transparent 5px solid;
     border-right: transparent 5px solid;
     border-top: 9px solid #54a1c5;
-    
+
 }
 
 /* Styles des cartes */
+
 .card {
     position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 23%;
     flex: 0 1 23%;
 }
 
 .card__img {
-    height: auto; 
-    width:100%;
+    height: auto;
+    width: 100%;
 }
 
 .card__description {
@@ -81,6 +103,7 @@
     bottom: 5px;
     width: auto;
     padding: 20px;
+    -webkit-transition: all .7s ease-out;
     transition: all .7s ease-out;
 }
 
@@ -104,36 +127,28 @@
 }
 
 /* Position de l'icon fa-eye  */
+
 .card__description > .fa-eye {
-    position:absolute;
-    right:5%;
-    top:-1.2em;
+    position: absolute;
+    right: 5%;
+    top: -1.2em;
 
     width: 2.3em;
     height: 2.3em;
     line-height: 2.3em;
     text-align: center;
-    
+
     border: solid 1px white;
     border-radius: 50%;
-    background:#60aed1;
-    color:white;
+    background: #60aed1;
+    color: white;
 }
 
 
 /* -------------------- Media queries ------------------ */
 
-@media screen and (max-width: 1280px) {
-    
-    
-}
+@media screen and (max-width: 1280px) {}
 
-@media screen and (max-width: 1024px) {
-   
-    
-}
+@media screen and (max-width: 1024px) {}
 
-@media screen and (max-width: 768px) {
-
-    
-}
+@media screen and (max-width: 768px) {}
