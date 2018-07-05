@@ -1,0 +1,59 @@
+.services-list {
+    padding-top: 50px;
+    float: right;
+    width: 50%;
+
+    position: relative;
+}
+
+.services-list__item {
+    position: relative;
+    padding-left: 20%;
+    list-style: none;
+}
+
+.services-list__item > i:first-child {
+    position: absolute;
+    left: 0;
+    color: #60aed1;
+    border-radius: 50%;
+    border: solid 1px lightgrey;
+
+    width: 2.3em;
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+}
+
+.services-list__item > h3 {
+    margin: 0;
+}
+
+.services-list__item > i::after {
+    font-family: "Font Awesome";
+    content: "\f111";/* correspond à fa-circle */
+    
+    display: inline-block;
+    position: absolute;
+    right: -6px;
+
+    color: #60aed1;
+    font-size: 13px;
+}
+
+/* -------------------- Media queries ------------------ */
+
+@media screen and (max-width: 1280px) {
+    
+    
+}
+
+@media screen and (max-width: 1024px) {
+   
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    
+}

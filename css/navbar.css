@@ -1,0 +1,116 @@
+/* ------------ navbar.css ------------------ */
+
+.navbar {
+    margin: 0;
+
+    position: fixed;
+    top: 0;
+
+    height: 80px;
+    width: 100%;
+
+    background: #ffffff;
+    z-index: 9999;
+}
+
+.navbar__logo{
+    position:relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar__menu {
+    float: right;
+}
+
+/* ------------------- .menu ---------------------- */
+
+.main-menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu__item {
+    float: left;
+    margin-left: 60px;
+    padding: 30px 10px 0 10px;
+    list-style: none;
+}
+
+.main-menu__item:first-child {
+    margin-left: 0px;
+}
+
+.main-menu__item--active {
+    border-top: 2px solid #60aed1;
+
+}
+
+.main-menu__item--active > a {
+    color: #60aed1;
+    margin-top: -2px;
+}
+
+.main-menu__link {
+    text-decoration: none;
+    color: black;
+}
+
+.main-menu__link:hover {
+    color: #60aed1;
+}
+
+/* -------------------- Media queries ------------------ */
+
+@media screen and (max-width: 1280px) {
+    .main-menu__item {
+        margin-left: 45px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar{
+        height: 60px;
+    }
+    .navbar__logo > a > img{
+        max-height: 40px;
+    }
+    .main-menu__item {
+        margin-left: 30px;
+        padding-top: 20px;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Afficher le menu mobile  */
+    .navbar {
+        justify-content: space-between;
+        height: 60px;
+    }
+    .navbar__menu {
+        float: none;
+        
+    }
+    .main-menu {
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    .main-menu__item {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding:10px 0;
+        float: none;
+        text-align: center;
+        background:white;
+        border-bottom:1px solid lightgray;
+
+    }
+
+}
