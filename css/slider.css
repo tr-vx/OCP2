@@ -19,7 +19,6 @@
 /* ---- Bloc contenant les slides ---- */
 
 .slider__slides {
-    -webkit-animation: move 20s infinite;
     animation: move 20s infinite;
     height: 550px;
 }

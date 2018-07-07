@@ -27,8 +27,6 @@
 /* Menu utiliser avec la galerie */
 
 .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -39,8 +37,6 @@
     position: relative;
     width: 90px;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -85,7 +81,6 @@
     bottom: 5px;
     width: auto;
     padding: 20px;
-    -webkit-transition: all .7s ease-out;
     transition: all .7s ease-out;
 }
 
