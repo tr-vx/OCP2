@@ -1,8 +1,6 @@
 .services {
     position: relative;
     max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -60,8 +58,6 @@
 @media screen and (max-width: 1280px) {
     .services-img,
     .services-list {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
         flex: 0 1 auto;
     }
     .services-list {
@@ -73,9 +69,6 @@
 
 @media screen and (max-width: 900px) {
     .services {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
         flex-flow: column wrap;
     }
     .services-img,
@@ -84,20 +77,12 @@
     }
     .services-list {
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-flex: row;
-        -ms-flex: row wrap;
         flex: row wrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
         justify-content: space-between;
 
     }
     .services-list__item {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 1 250px;
         flex: 0 1 250px;
         padding-left: 0;
         text-align: center;
@@ -118,9 +103,6 @@
 
 @media screen and (max-width: 768px) {
     .services-list {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column;
         flex-flow: column;
     }
     .services-list__item {
