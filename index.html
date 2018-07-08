@@ -52,9 +52,17 @@
     <!-- Accueil / slider -->
     <section id="accueil">
         <div class="slider">
-
+            
+            <!-- boutons pour le changement de slide (label + checkbox) -->
+            <input type="radio" name="slide-nav" id="previous-slide">
+            <input type="radio" name="slide-nav" id="next-slide">
+            <label for="previous-slide" class="slider__nav slider__nav--left"><i class="fa fa-angle-left"></i></label>
+            <label for="next-slide" class="slider__nav slider__nav--right"><i class="fa fa-angle-left fa-rotate-180"></i></label>
+           
+            
             <!-- les slides -->
             <div class="slider__slides">
+               
                 <!-- Premier slide-->
                 <div class="slider__slide slider__slide--1">
                     <!-- le text du slider -->
@@ -64,9 +72,9 @@
                             <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
                             <input type="button" class="btn" value="Plus d'infos">
                         </div>
-                        <!-- /.container -->
                     </div>
                 </div>
+                
                 <!-- Deuxieme slide-->
                 <div class="slider__slide slider__slide--2">
                     <div class="slider__text">
@@ -75,16 +83,11 @@
                             <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
                             <input type="button" class="btn" value="Plus d'infos">
                         </div>
-                        <!-- /.container -->
                     </div>
                 </div>
 
             </div>
-
-            <!-- boutons pour le changement de slide -->
-            <a class="slider__nav slider__nav--left"><i class="fa fa-angle-left"></i></a>
-            <a class="slider__nav slider__nav--right"><i class="fa fa-angle-left fa-rotate-180"></i></a>
-
+            
         </div>
     </section>
 

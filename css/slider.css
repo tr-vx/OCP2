@@ -17,11 +17,12 @@
 
 .slider__slides {
     animation: move 20s infinite;
+    position:relative;
     height: 550px;
     width: 100%;
 }
 
-/* Slides  */
+/* Slide par defaut */
 
 .slider__slide {
     position: absolute;
@@ -44,7 +45,24 @@
     background: url('../images/slider/bg2.jpg');
     background-size: cover;
 }
+/* --- Changement de slides --- */
 
+/* On masque les input de type radio*/
+.slider input[type=radio]{
+    display:none;
+}
+/* Desactiver l'animation automatique à l'appui d'un bouton et déplacer le slide*/
+#previous-slide:checked ~ .slider__slides{
+    left:0;
+    animation:none;
+}
+
+#next-slide:checked ~ .slider__slides{
+    left:-100%;
+    animation:none;
+}
+
+/* style des boutons */
 .slider__nav {
     /* Bouton de changement de slide  */
     display: block;
@@ -55,6 +73,7 @@
     background: rgba(0, 0, 0, 0.5);
     padding: 30px;
     cursor: pointer;
+    z-index:99;
 }
 
 .slider__nav:hover {
@@ -88,10 +107,7 @@
 }
 
 
-.slider__nav::after {}
-
 /* -- Animation automatique du slider -- */
-
 @keyframes move {
     0% {
         transform: translateX(0);
