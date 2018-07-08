@@ -38,13 +38,13 @@ section#contact {
 
     font-style: normal;
     /* Retirer le style italic*/
-    line-height: 20px;
+    line-height: 18px;
     font-size: 10pt;
     /* A PASSER MOINS BOLD!  */
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
+/* formulaire */
 .bloc-contact__form {
     height: auto;
 
@@ -53,19 +53,25 @@ section#contact {
     justify-content: space-between;
 }
 
+/*  Bouton envoyer */
 .bloc-contact__form input:last-of-type {
-    /*  Bouton envoyer */
-    flex: 0 1 auto;
+
     align-self: flex-start;
 }
 
 .bloc-contact__form > textarea, 
-.bloc-contact__form > input {
-    border: 1px solid lightgray;
+.bloc-contact__form > input[type=text] {
+    min-width:100%;
     max-width:100%;
-    margin-bottom:10px;
+    margin-bottom:15px;
+    height:18px;
+    border:1px solid lightgrey;
+    border-radius:3px;
 }
-
+.bloc-contact__form > textarea{
+    min-height:134px;
+    max-height:134px;
+}
 /* -------------------- Media queries ------------------ */
 
 @media screen and (max-width: 1280px) {}
@@ -86,12 +92,11 @@ section#contact {
 @media screen and (max-width: 768px) {
     .bloc-contact {
         width:auto;
-        bottom: 100px;
         right: 10%;
         left: 10%;
     }
     .bloc-contact__form {
-        height:270px;
+        height:auto;
     }
     
 }
