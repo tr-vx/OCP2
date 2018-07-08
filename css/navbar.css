@@ -22,7 +22,17 @@
 .navbar__menu {
     float: right;
 }
-
+/* checkbox pour ouvrir et fermer le menu sur petit ecran */
+.navbar__menu > label{
+    display: none;
+    position:relative;
+    top:15px;
+    right:10px;
+    cursor: pointer;
+}
+.navbar__menu > input[type=checkbox]{
+    display: none;
+}
 /* ------------------- .menu ---------------------- */
 
 .main-menu {
@@ -44,7 +54,7 @@
 
 .main-menu__item--active {
     border-top: 2px solid #60aed1;
-
+    padding-top:28px;
 }
 
 .main-menu__item--active > a {
@@ -54,12 +64,13 @@
 
 .main-menu__link {
     text-decoration: none;
-    color: black;
+    color:darkslategrey;
 }
 
 .main-menu__link:hover {
     color: #60aed1;
 }
+
 
 /* -------------------- Media queries ------------------ */
 
@@ -92,25 +103,46 @@
         justify-content: space-between;
         height: 60px;
     }
-    .navbar__menu {
-        float: none;
-
+    .navbar__menu{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%
     }
     .main-menu {
-        width: 100%;
-        display: block;
+        display: none;
         margin: 0;
+        float:none;
+        width:100%;
     }
     .main-menu__item {
-        display: inline-block;
-        width: 100%;
         margin: 0;
-        padding: 10px 0;
-        float: none;
-        text-align: center;
-        background: white;
-        border-bottom: 1px solid lightgray;
-
+        width:100%;
+        padding: 20px 5px;
+        text-align:center;
+        border-bottom:1px solid lightgrey;
+        background:white;
     }
-
+    .main-menu__item:first-child {
+        margin: 0;
+        width:100%;
+        margin-top:60px;
+    }
+    .main-menu__item--active{
+        padding-top:18px;
+    }
+    .navbar__menu > input[type=checkbox]:checked ~ ul {
+        display: block;
+    }
+    .navbar__menu > label{
+        position:absolute;
+        display: block;
+        color:grey;
+        float:right;
+    }
+    .navbar__menu > input[type=checkbox]:checked ~ label {
+        color:#60aed1;
+    }
+    
+     
 }

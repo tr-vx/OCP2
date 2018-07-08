@@ -13,16 +13,13 @@
 .gallery__cards-wrapper {
     position: relative;
     width: 100%;
-    height: 570px;
-
+    height: 520px;
     display: flex;
     flex-flow: row wrap;
-    justify-content:flex-start;
+    justify-content:space-between;
     align-content: space-between;
-
     margin-top: 40px;
 }
-
 
 /* Menu utiliser avec la galerie */
 
@@ -43,9 +40,24 @@
 .menu__link {
     display: inline-block;
     text-decoration: none;
-    flex: 1 0 auto;
+    padding: 7px 7px 7px 7px;
+    color: darkslategrey;
+    background: #e5e5e5;
+    border-radius: 4px;
+    
+    flex: 1 0 auto;  
 }
-
+.menu__link:hover{
+    background-color: #60aed1;
+    border-bottom: 3px solid #54a1c5;
+    color:white;
+    transition: color .3s ease;
+}
+.menu__link--active{
+    background: #60aed1;
+    color: white;
+    border-bottom: 3px solid #54a1c5;
+}
 /*  Repére en dessous du bouton actif */
 
 .menu__link--active::after {
@@ -65,8 +77,9 @@
 /* Styles des cartes */
 
 .card {
-    position: relative;
-    flex: 0 1 23%;
+    position:relative;
+    flex: 0 1 24%;
+    margin-bottom:20px;
 }
 
 .card__img {
@@ -78,20 +91,21 @@
     position: absolute;
     display: none;
     left: 0;
-    bottom: 5px;
-    width: auto;
-    padding: 20px;
-    transition: all .7s ease-out;
+    right:0;
+    bottom: 4px;
+    padding: 10px 20px;
 }
 
 .card__title {
     font-family: "Roboto Bold";
     color: white;
+    font-size:9pt;
 }
 
 .card__text {
     color: white;
-    font-family: "Roboto Regular"
+    font-family: "Roboto Regular";
+    font-size:7pt;
 }
 
 
@@ -105,7 +119,7 @@
 
 /* Position de l'icon fa-eye  */
 
-.card__description > .fa-eye {
+.card__description > a >.fa-eye {
     position: absolute;
     right: 5%;
     top: -1.2em;
@@ -115,17 +129,38 @@
     line-height: 2.3em;
     text-align: center;
 
-    border: solid 1px white;
+    border: solid 1.5px white;
     border-radius: 50%;
     background: #60aed1;
     color: white;
 }
-
+.card__description > a:hover >.fa-eye {
+    background: white;
+    color: #60aed1;
+    border: solid 1.5px #60aed1;
+    
+}
 
 /* -------------------- Media queries ------------------ */
 
-@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1280px) {
+    .gallery__cards-wrapper {
+        height: 520px;
+    }
+}
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .gallery__cards-wrapper {
+        height: auto;
+    }
+    .card {
+        flex: 0 1 49%;
+    }
+}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    
+    .card {
+        flex: 0 1 100%;
+    }
+}

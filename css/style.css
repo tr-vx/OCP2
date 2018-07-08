@@ -14,7 +14,9 @@ h2 {
 h2 {
     text-align: center;
 }
-
+h3{ 
+    font-family: "Roboto Bold";
+}
 /* décoration en dessous des h2 */
 
 .separator {
@@ -68,8 +70,12 @@ body {
     background: #60aed1;
     color: white;
     border: 0;
-    border-radius: 2px;
-    border-bottom: 2px solid #54a1c5;
+    border-radius: 3px;
+    border-bottom: 3px solid #54a1c5;
+}
+.btn:hover{
+    background: #54a1c5;
+    cursor: pointer;
 }
 
 .subtitle {
@@ -88,6 +94,17 @@ section {
     margin: auto;
 }
 
+.footer{
+    height:20px;
+    background:white;
+    text-align:center;
+    padding:5px;
+    font-size:8px;
+}
+.footer a{
+    text-decoration: none;
+    color:#60aed1;
+}
 
 /* ----------- media queries ----- */
 
@@ -112,7 +129,15 @@ section {
     }
     .subtitle {
         padding :0;
-    
     }
-
+    .separator {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .separator:after {
+        font-size: 13px;
+    }
 }
+
+
+

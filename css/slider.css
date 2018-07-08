@@ -2,18 +2,15 @@
 
 .slider {
     position: relative;
-    margin: 0;
-    padding: 0;
     width: 100%;
-    height: 550px;
-    overflow-x: hidden;
+    overflow-x:hidden; 
 }
 
 .slider__text {
     color: white;
-    position: absolute;
+    position: relative;
     top: 40%;
-    left: 10%;
+    left: 5%;
 }
 
 /* ---- Bloc contenant les slides ---- */
@@ -21,29 +18,29 @@
 .slider__slides {
     animation: move 20s infinite;
     height: 550px;
+    width:100%;
 }
 
-/* Style d'un slide */
+/* Slides  */
 
 .slider__slide {
     position: absolute;
-    left: 0;
     height: 100%;
-
-
+    width:100%;
+}
+/* Slide 1  */
+.slider__slide--1 {
+    left: 0;
+    background: url('../images/slider/bg1.jpg');
+    background-size:cover;
 }
 
-.slider__slide > img {
-    max-height: 100%;
-}
-
-/* position du slide 2*/
-
-.slider__slide:nth-child(2) {
+/* slide 2*/
+.slider__slide--2 {
     left: 100%;
+    background: url('../images/slider/bg2.jpg');
+    background-size: cover;
 }
-
-.slider__inner {}
 
 .slider__nav {
     /* Bouton de changement de slide  */
@@ -54,6 +51,7 @@
     color: rgba(255, 255, 255, 0.5);
     background: rgba(0, 0, 0, 0.5);
     padding: 30px;
+    cursor: pointer;
 }
 
 .slider__nav:hover {
@@ -91,7 +89,6 @@
 
 /* -- Animation automatique du slider -- */
 
-
 @keyframes move {
     0% {
         transform: translateX(0);
@@ -121,7 +118,9 @@
     .slider {
         max-height: 450px;
     }
-
+    .slider__text{
+        width:550px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -134,9 +133,18 @@
 }
 
 @media screen and (max-width: 768px) {
-    .slider__slides .slider {
+    .slider__slides, .slider {
         max-height: 200px;
     }
-
+    .slider__text{
+        top:30%;
+        width:300px;
+    }
+    .slider__text h1{
+        font-size:12pt;
+    }
+    .slider__text  p{
+        font-size:8pt;
+    }
 
 }

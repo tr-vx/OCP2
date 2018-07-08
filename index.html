@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" />
 
     <title>WebAgency</title>
 
@@ -28,12 +32,18 @@
             </div>
 
             <div class="navbar__menu">
+                <!-- Affichage pour menu sur petite écran -->
+                <input type="checkbox" id="dropdown-menu">
+                <label for="dropdown-menu"><i class="fa fa-bars fa-2x"></i></label>
+                
                 <ul class="main-menu">
                     <li class="main-menu__item main-menu__item--active"><a class="main-menu__link" href="#accueil">Accueil</a></li>
                     <li class="main-menu__item"><a class="main-menu__link" href="#services">Services</a></li>
                     <li class="main-menu__item"><a class="main-menu__link" href="#portfolio">Portfolio</a></li>
                     <li class="main-menu__item"><a class="main-menu__link" href="#contact">Contact</a></li>
                 </ul>
+                
+                
             </div>
 
         </div>
@@ -43,29 +53,37 @@
     <section id="accueil">
         <div class="slider">
 
-            <!-- les images du slider -->
+            <!-- les slides -->
             <div class="slider__slides">
-                <div class="slider__slide">
-                    <img src="./images/slider/bg1.jpg" alt="slide 1">
+               <!-- Premier slide-->
+                <div class="slider__slide slider__slide--1">
+                    <!-- le text du slider -->
+                    <div class="slider__text">
+                        <div class="container">
+                            <h1><span class="text-blue">webagency</span> : l'agence de tous vos projets</h1>
+                            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                            <input type="button" class="btn" value="Plus d'infos">
+                        </div>
+                        <!-- /.container -->
+                    </div>
                 </div>
-
-                <div class="slider__slide"><img src="./images/slider/bg2.jpg" alt="slide 2"></div>
+                <!-- Deuxieme slide-->
+                <div class="slider__slide slider__slide--2">
+                    <div class="slider__text">
+                        <div class="container">
+                            <h1><span class="text-blue">webagency</span> : l'agence de tous vos projets</h1>
+                            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                            <input type="button" class="btn" value="Plus d'infos">
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                </div>
 
             </div>
 
             <!-- boutons pour le changement de slide -->
             <a class="slider__nav slider__nav--left"><i class="fa fa-angle-left"></i></a>
             <a class="slider__nav slider__nav--right"><i class="fa fa-angle-left fa-rotate-180"></i></a>
-
-            <!-- le text du slider -->
-            <div class="slider__text">
-                <div class="container">
-                    <h1><span class="text-blue">webagency</span> : l'agence de tous vos projets</h1>
-                    <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-                    <input type="button" class="btn" value="Plus d'infos">
-                </div>
-                <!-- /.container -->
-            </div>
 
         </div>
     </section>
@@ -126,16 +144,16 @@
                     <!-- Menu de gallerie de projets-->
                     <ul class="menu">
                         <li class="menu__item">
-                            <a class="menu__link menu__link--active btn" href="">Tout</a>
+                            <a class="menu__link menu__link--active" href="">Tout</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link btn" href="">Créatif</a>
+                            <a class="menu__link" href="">Créatif</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link btn" href="">Entreprise</a>
+                            <a class="menu__link" href="">Entreprise</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link btn" href="">Portfolio</a>
+                            <a class="menu__link" href="">Portfolio</a>
                         </li>
 
                     </ul>
@@ -146,7 +164,7 @@
                         <img class="card__img" src="./images/portfolio/01.jpg" alt="">
 
                         <div class="card__description">
-                            <i class="fa fa-eye"></i>
+                            <a href=""><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
                             <div class="card__text">fugiat voluptas dicta expedita natus. </div>
                         </div>
@@ -155,7 +173,7 @@
                         <img class="card__img" src="./images/portfolio/02.jpg" alt="">
 
                         <div class="card__description">
-                            <i class="fa fa-eye"></i>
+                            <a href=""><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
                             <div class="card__text">epellendus fugiat voluptas dicta expedita natus. </div>
                         </div>
@@ -164,7 +182,7 @@
                         <img class="card__img" src="./images/portfolio/03.jpg" alt="">
 
                         <div class="card__description">
-                            <i class="fa fa-eye"></i>
+                            <a href=""><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
                             <div class="card__text">Laudanoluptas dicta expedita natus. </div>
                         </div>
@@ -173,7 +191,7 @@
                         <img class="card__img" src="./images/portfolio/04.jpg" alt="">
 
                         <div class="card__description">
-                            <i class="fa fa-eye"></i>
+                            <a href=""><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
                             <div class="card__text">Laudantium tempordita natus. </div>
                         </div>
@@ -182,7 +200,7 @@
                         <img class="card__img" src="./images/portfolio/05.jpg" alt="">
 
                         <div class="card__description">
-                            <i class="fa fa-eye"></i>
+                            <a href=""><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
                             <div class="card__text">fugiat voluptas dicta expedita natus. </div>
                         </div>
@@ -191,7 +209,7 @@
                         <img class="card__img" src="./images/portfolio/06.jpg" alt="">
 
                         <div class="card__description">
-                            <i class="fa fa-eye"></i>
+                            <a href=""><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
                             <div class="card__text">Laudantium dicta expedita natus. </div>
                         </div>
@@ -200,7 +218,7 @@
                         <img class="card__img" src="./images/portfolio/07.jpg" alt="">
 
                         <div class="card__description">
-                            <i class="fa fa-eye"></i>
+                            <a href=""><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
                             <div class="card__text">Laudantium tempora excepturi consequatur repellendus </div>
                         </div>
@@ -209,7 +227,7 @@
                         <img class="card__img" src="./images/portfolio/08.jpg" alt="">
 
                         <div class="card__description">
-                            <i class="fa fa-eye"></i>
+                            <a href=""><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
                             <div class="card__text">Laudantium texpedita natus. </div>
                         </div>
@@ -218,7 +236,7 @@
                         <img class="card__img" src="./images/portfolio/full.jpg" alt="full">
 
                         <div class="card__description">
-                            <i class="fa fa-eye fa-stack"></i>
+                            <a href=""><i class="fa fa-eye fa-stack"></i></a>
                             <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
                             <div class="card__text">Laiat voluptas dicta expedita natus. </div>
                         </div>
@@ -246,10 +264,10 @@
 			</address>
 
             <form class="bloc-contact__form" action="">
-                <input type="text" name="Nom" id="nom" placeholder="Nom">
-                <input type="text" name="email" id="email" placeholder="Prenom">
-                <input type="text" name="objet" id="objet" placeholder="Objet">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="text" name="Nom" id="nom" placeholder="  Nom">
+                <input type="text" name="email" id="email" placeholder="  Prenom">
+                <input type="text" name="objet" id="objet" placeholder="  Objet">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="  Message"></textarea>
                 <input type="button" value="Envoyer" class="btn">
             </form>
 
@@ -257,7 +275,9 @@
 
 
     </section>
-
+    <footer class="footer">
+        <p>WebAgency 2018 - Intégration web par <a href="#">Trevx</a></p>
+    </footer>
 
 </body>
 
