@@ -78,10 +78,6 @@
 
 /* -------------------- Media queries ------------------ */
 
-@media screen and (max-width: 1280px) {
-   
-
-}
 
 @media screen and (max-width: 1024px) {
     .navbar {
@@ -93,8 +89,6 @@
     .main-menu__item {
         padding-top: 20px;
     }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -140,6 +134,4 @@
         color: #60aed1;
         transition: color 1s ease;
     }
-
-
 }

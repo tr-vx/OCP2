@@ -147,8 +147,6 @@
     .slider {
         max-height: 350px;
     }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -166,5 +164,4 @@
     .slider__text p {
         font-size: 8pt;
     }
-
 }

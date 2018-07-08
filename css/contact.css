@@ -32,7 +32,11 @@ section#contact {
 }
 
 .bloc-contact__title {
+    display:inline;
     font-family: "Roboto Bold";
+    text-align:left;
+    font-size:13pt;
+    text-transform: none;
 }
 
 .bloc-contact__infos {
@@ -79,8 +83,6 @@ section#contact {
 }
 
 /* -------------------- Media queries ------------------ */
-
-@media screen and (max-width: 1280px) {}
 
 @media screen and (max-width: 1024px) {
     section#contact {
