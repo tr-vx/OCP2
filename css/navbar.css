@@ -22,17 +22,21 @@
 .navbar__menu {
     float: right;
 }
+
 /* checkbox pour ouvrir et fermer le menu sur petit ecran */
-.navbar__menu > label{
+
+.navbar__menu > label {
     display: none;
-    position:relative;
-    top:15px;
-    right:10px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
     cursor: pointer;
 }
-.navbar__menu > input[type=checkbox]{
+
+.navbar__menu > input[type=checkbox] {
     display: none;
 }
+
 /* ------------------- .menu ---------------------- */
 
 .main-menu {
@@ -43,7 +47,7 @@
 
 .main-menu__item {
     float: left;
-    margin-left: 60px;
+    margin-left: 30px;
     padding: 30px 10px 0 10px;
     list-style: none;
 }
@@ -54,7 +58,7 @@
 
 .main-menu__item--active {
     border-top: 2px solid #60aed1;
-    padding-top:28px;
+    padding-top: 28px;
 }
 
 .main-menu__item--active > a {
@@ -64,7 +68,7 @@
 
 .main-menu__link {
     text-decoration: none;
-    color:darkslategrey;
+    color: darkslategrey;
 }
 
 .main-menu__link:hover {
@@ -75,9 +79,7 @@
 /* -------------------- Media queries ------------------ */
 
 @media screen and (max-width: 1280px) {
-    .main-menu__item {
-        margin-left: 45px;
-    }
+   
 
 }
 
@@ -89,7 +91,6 @@
         max-height: 40px;
     }
     .main-menu__item {
-        margin-left: 30px;
         padding-top: 20px;
     }
 
@@ -99,50 +100,46 @@
 @media screen and (max-width: 768px) {
 
     /* Afficher le menu mobile  */
-    .navbar {
-        justify-content: space-between;
-        height: 60px;
-    }
-    .navbar__menu{
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%
+    .navbar__menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
     .main-menu {
         display: none;
-        margin: 0;
-        float:none;
-        width:100%;
+        opacity: 0;
+        /*  Je le place plus haut que prevu pour lui donner un effet de glissement à l'appel */
     }
     .main-menu__item {
         margin: 0;
-        width:100%;
-        padding: 20px 5px;
-        text-align:center;
-        border-bottom:1px solid lightgrey;
-        background:white;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid lightgrey;
+        padding: 20px 0;
+        background: white;
+
     }
     .main-menu__item:first-child {
         margin: 0;
-        width:100%;
-        margin-top:60px;
+        width: 100%;
+        margin-top: 60px;
     }
-    .main-menu__item--active{
-        padding-top:18px;
-    }
-    .navbar__menu > input[type=checkbox]:checked ~ ul {
+    .navbar__menu > input[type=checkbox]:checked ~ .main-menu {
         display: block;
+        opacity: 1;
     }
-    .navbar__menu > label{
-        position:absolute;
+
+    .navbar__menu > label {
         display: block;
-        color:grey;
-        float:right;
+        color: grey;
+        transition: color 1s ease;
     }
+
     .navbar__menu > input[type=checkbox]:checked ~ label {
-        color:#60aed1;
+        color: #60aed1;
+        transition: color 1s ease;
     }
-    
-     
+
+
 }

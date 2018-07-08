@@ -1,5 +1,6 @@
 p,
-address,a {
+address,
+a {
     font-family: "Roboto Regular";
     font-size: 1em;
 }
@@ -14,9 +15,11 @@ h2 {
 h2 {
     text-align: center;
 }
-h3{ 
+
+h3 {
     font-family: "Roboto Bold";
 }
+
 /* décoration en dessous des h2 */
 
 .separator {
@@ -73,14 +76,15 @@ body {
     border-radius: 3px;
     border-bottom: 3px solid #54a1c5;
 }
-.btn:hover{
+
+.btn:hover {
     background: #54a1c5;
     cursor: pointer;
 }
 
 .subtitle {
     text-align: center;
-    padding :0 20% 0 20%;
+    padding: 0 20% 0 20%;
 }
 
 
@@ -94,32 +98,31 @@ section {
     margin: auto;
 }
 
-.footer{
-    height:20px;
-    background:white;
-    text-align:center;
-    padding:5px;
-    font-size:8px;
+.footer {
+    height: 20px;
+    background: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 9px;
 }
-.footer a{
+
+.footer a {
     text-decoration: none;
-    color:#60aed1;
+    color: #60aed1;
 }
 
 /* ----------- media queries ----- */
 
-@media screen and (max-width: 1280px) {
-    
-}
+@media screen and (max-width: 1280px) {}
 
 @media screen and (max-width: 1024px) {
     .container {
         width: 90%;
     }
-    
+
     section {
         /* hauteur de la navbar */
-        padding-top:60px;
+        padding-top: 60px;
     }
 }
 
@@ -128,7 +131,7 @@ section {
         width: 95%;
     }
     .subtitle {
-        padding :0;
+        padding: 0;
     }
     .separator {
         margin-top: 20px;
@@ -138,6 +141,3 @@ section {
         font-size: 13px;
     }
 }
-
-
-

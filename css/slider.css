@@ -3,7 +3,7 @@
 .slider {
     position: relative;
     width: 100%;
-    overflow-x:hidden; 
+    overflow-x: hidden;
 }
 
 .slider__text {
@@ -18,7 +18,7 @@
 .slider__slides {
     animation: move 20s infinite;
     height: 550px;
-    width:100%;
+    width: 100%;
 }
 
 /* Slides  */
@@ -26,16 +26,19 @@
 .slider__slide {
     position: absolute;
     height: 100%;
-    width:100%;
+    width: 100%;
 }
+
 /* Slide 1  */
+
 .slider__slide--1 {
     left: 0;
     background: url('../images/slider/bg1.jpg');
-    background-size:cover;
+    background-size: cover;
 }
 
 /* slide 2*/
+
 .slider__slide--2 {
     left: 100%;
     background: url('../images/slider/bg2.jpg');
@@ -118,8 +121,8 @@
     .slider {
         max-height: 450px;
     }
-    .slider__text{
-        width:550px;
+    .slider__text {
+        width: 550px;
     }
 }
 
@@ -133,18 +136,19 @@
 }
 
 @media screen and (max-width: 768px) {
-    .slider__slides, .slider {
+    .slider__slides,
+    .slider {
         max-height: 200px;
     }
-    .slider__text{
-        top:30%;
-        width:300px;
+    .slider__text {
+        top: 30%;
+        width: 300px;
     }
-    .slider__text h1{
-        font-size:12pt;
+    .slider__text h1 {
+        font-size: 12pt;
     }
-    .slider__text  p{
-        font-size:8pt;
+    .slider__text p {
+        font-size: 8pt;
     }
 
 }
