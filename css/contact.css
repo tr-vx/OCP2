@@ -51,7 +51,6 @@ section#contact {
 
 .bloc-contact__form {
     height: auto;
-
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -60,7 +59,6 @@ section#contact {
 /*  Bouton envoyer */
 
 .bloc-contact__form input:last-of-type {
-
     align-self: flex-start;
 }
 
@@ -93,7 +91,6 @@ section#contact {
         width: 300px;
         height: 396px;
     }
-    .bloc-contact__form {}
 }
 
 @media screen and (max-width: 768px) {
