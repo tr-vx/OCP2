@@ -25,6 +25,10 @@ h3 {
     font-family: "Roboto Bold";
 }
 
+figure, figcaption{
+    padding:0;
+    margin:0
+}
 /* décoration en dessous des h2 */
 
 .separator {
