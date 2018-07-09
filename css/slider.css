@@ -9,10 +9,13 @@
 .slider__text {
     color: white;
     position: relative;
-    top: 40%;
+    top: 25%;
     left: 5%;
 }
-
+/* positionnement du texte du slide2 (sans titre h1)*/
+.slider__text .container  p:first-child {
+    margin-top:20%;
+}
 /* ---- Bloc contenant les slides ---- */
 
 .slider__slides {
