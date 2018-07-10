@@ -1,23 +1,25 @@
 /* Galerie */
-#portfolio{
-    background:#f5f5f5;
+
+#portfolio {
+    background: #f5f5f5;
 }
+
 .gallery {
     padding-top: 20px;
 }
 
-/* Le menu de la galerie */
+/* Le Bloc du menu de la galerie */
 
 .gallery__nav {
     display: block;
 }
 
-/* Le bloc contenant les differentes cartes*/
+/* Le bloc contenant les differentes cartes des projets*/
 
 .gallery__cards-wrapper {
     position: relative;
     width: 100%;
-    min-height: 590px;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -57,31 +59,130 @@
     border-bottom: 3px solid #54a1c5;
     color: white;
     transition: color .3s ease;
+    cursor: pointer;
+
+    transition: color .8s ease;
 }
 
-.menu__link--active {
+/* Mise en marche du menu de tri des projets via radio/label */
+/* Masquer les radio */
+.gallery input[type=radio]{
+    display:none;
+}
+
+/* Onglet "Tout" ---------------------------*/
+
+/* Modification de l'etat du bouton au clic */
+
+#Tout[type=radio]:checked ~ nav label[for=Tout] {
     background: #60aed1;
     color: white;
     border-bottom: 3px solid #54a1c5;
 }
 
-/*  Repére en dessous du bouton actif */
-
-.menu__link--active::after {
+#Tout[type=radio]:checked ~ nav label[for=Tout]:after {
     content: " ";
     position: absolute;
-
     bottom: -9px;
     left: 50%;
-
-    /* creer un triangle */
+    /* creer un triangle en css */
     border-left: transparent 5px solid;
     border-right: transparent 5px solid;
     border-top: 9px solid #54a1c5;
-
 }
 
-/* Styles des cartes */
+/* Affichage de tous les projets */
+
+#Tout[type=radio]:checked ~ .gallery__cards-wrapper > .card {
+    display: block;
+}
+
+/* Onglet "Creatif" ------------------------*/
+
+/* Modification de l'etat du bouton au clic */
+
+#Creatif[type=radio]:checked ~ nav label[for=Creatif] {
+    background: #60aed1;
+    color: white;
+    border-bottom: 3px solid #54a1c5;
+}
+
+#Creatif[type=radio]:checked ~ nav label[for=Creatif]:after {
+    content: " ";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    /* creer un triangle en css */
+    border-left: transparent 5px solid;
+    border-right: transparent 5px solid;
+    border-top: 9px solid #54a1c5;
+}
+
+/* Masquer tous les projets qui ne comportent pas la classe .projet-creatif*/
+
+#Creatif[type=radio]:checked ~ .gallery__cards-wrapper > .card:not(.projet-creatif) {
+    display: none;
+}
+
+/* Onglet "Entreprise" ---------------------*/
+
+/* Modification de l'etat du bouton au clic */
+
+#Entreprise[type=radio]:checked ~ nav label[for=Entreprise] {
+    background: #60aed1;
+    color: white;
+    border-bottom: 3px solid #54a1c5;
+}
+
+#Entreprise[type=radio]:checked ~ nav label[for=Entreprise]:after {
+    content: " ";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    /* creer un triangle en css */
+    border-left: transparent 5px solid;
+    border-right: transparent 5px solid;
+    border-top: 9px solid #54a1c5;
+}
+
+/* Masquer tous les projets qui ne comportent pas la classe .projet-entreprise*/
+
+#Entreprise[type=radio]:checked ~ .gallery__cards-wrapper > .card:not(.projet-entreprise) {
+    display: none;
+}
+
+/* Onglet "Portfolio" ----------------------*/
+
+/* Modification de l'etat du bouton au clic */
+
+#Portfolio[type=radio]:checked ~ nav label[for=Portfolio] {
+    background: #60aed1;
+    color: white;
+    border-bottom: 3px solid #54a1c5;
+}
+
+#Portfolio[type=radio]:checked ~ nav label[for=Portfolio]:after {
+    content: " ";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    /* creer un triangle en css */
+    border-left: transparent 5px solid;
+    border-right: transparent 5px solid;
+    border-top: 9px solid #54a1c5;
+}
+
+/* Masquer tous les projets qui ne comportent pas la classe .projet-portfolio*/
+
+#Portfolio[type=radio]:checked ~ .gallery__cards-wrapper > .card:not(.projet-portfolio) {
+    display: none;
+}
+
+
+
+/* ----------------------------------------- */
+
+/* Styles des cartes / Images des projets -- */
 
 .card {
     position: relative;
@@ -116,7 +217,7 @@
 }
 
 
-/* Au survol d'une carte */
+/* Au survol d'une carte - */
 
 .card:hover > .card__description {
     display: block;
@@ -142,6 +243,8 @@
     color: white;
 }
 
+/* Changement de l'etat au survol de l'icon */
+
 .card__description > a:hover > .fa-eye {
     background: white;
     color: #60aed1;
@@ -152,15 +255,11 @@
 /* -------------------- Media queries ------------------ */
 
 @media screen and (max-width: 1280px) {
-    .gallery__cards-wrapper {
-        height: 520px;
-    }
+    
 }
 
 @media screen and (max-width: 1024px) {
-    .gallery__cards-wrapper {
-        height: auto;
-    }
+    
     .card {
         flex: 0 1 49%;
     }

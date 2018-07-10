@@ -146,22 +146,37 @@
             </header>
 
             <div class="gallery">
+                <!-- "radios hack css" pour rendre le menu fonctionnel -->
+                <input type="radio" name="gallery-nav" id="tout">
+                <input type="radio" name="gallery-nav" id="creatif">
+                <input type="radio" name="gallery-nav" id="entreprise">
+                <input type="radio" name="gallery-nav" id="portfolio">
+                
+                
+                
                 <nav class="gallery__nav">
                     <!-- Menu de gallerie de projets-->
                     <ul class="menu">
                         <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="#">Tout</a>
+                            <a class="menu__link menu__link--active" href="">
+                                <label for="tout" class="">Tout</label>
+                            </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Créatif</a>
+                            <a class="menu__link" href="">
+                                <label for="creatif" class="">Créatif</label>
+                            </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Entreprise</a>
+                            <a class="menu__link" href="">
+                                <label for="entreprise" class="">Entreprise</label>
+                            </a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Portfolio</a>
+                            <a class="menu__link" href="">
+                                <label for="portfolio" class="">Portfolio</label>
+                            </a>
                         </li>
-
                     </ul>
                 </nav>
                 <div class="gallery__cards-wrapper">

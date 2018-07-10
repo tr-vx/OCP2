@@ -103,7 +103,6 @@
     .main-menu {
         display: none;
         opacity: 0;
-        /*  Je le place plus haut que prevu pour lui donner un effet de glissement à l'appel */
     }
     .main-menu__item {
         margin: 0;
@@ -112,7 +111,6 @@
         border-bottom: 1px solid lightgrey;
         padding: 20px 0;
         background: white;
-
     }
     .main-menu__item:first-child {
         margin: 0;
