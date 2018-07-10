@@ -1,5 +1,4 @@
 section#contact {
-
     position: relative;
     height: 650px;
     padding-top: 80px;
@@ -36,12 +35,10 @@ section#contact {
 }
 
 .bloc-contact__infos {
-
     font-style: normal;
     /* Retirer le style italic*/
     line-height: 18px;
     font-size: 10pt;
-    /* A PASSER MOINS BOLD!  */
     margin-top: 15px;
     margin-bottom: 15px;
 }
