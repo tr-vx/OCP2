@@ -9,6 +9,7 @@ a {
     font-size: 1em;
     color:dimgrey;
 }
+
 h1,
 h2 {
     font-family: "Roboto Bold";
@@ -24,12 +25,20 @@ h3 {
     font-family: "Roboto Bold";
 }
 
+/* ligne de separation */
+hr{
+    width:60%;
+    border-color:lightgrey;
+    border-width:0.6px;
+    margin-top:0;
+    margin-bottom:0;
+}
 figure, figcaption{
     padding:0;
     margin:0
 }
-/* décoration en dessous des h2 */
 
+/* separation/décoration en dessous des h2 */
 .separator {
     border-top: 1px solid #e6e8ea;
     text-align: center;
@@ -54,7 +63,9 @@ figure, figcaption{
     color: #60aed1;
     font-size: 17px;
 }
-
+.separator--bg-grey:after{
+    background: background:#f5f5f5;
+}
 
 
 .bold {
