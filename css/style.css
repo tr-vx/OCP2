@@ -4,6 +4,7 @@ body {
 
 p,
 address,
+label,
 a {
     font-family: "Roboto Regular";
     font-size: 1em;
