@@ -78,7 +78,7 @@ section#contact {
 
 /* -------------------- Media queries ------------------ */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     section#contact {
         height: 560px;
     }

@@ -79,8 +79,19 @@
 /* -------------------- Media queries ------------------ */
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .navbar {
+        height: 70px;
+    }
+    .navbar__logo > a > img {
+        max-height: 50px;
+    }
+    .main-menu__item {
+        padding-top: 25px;
+    }
+}
+@media screen and (max-width: 992px) {
+     .navbar {
         height: 60px;
     }
     .navbar__logo > a > img {
@@ -90,7 +101,6 @@
         padding-top: 20px;
     }
 }
-
 @media screen and (max-width: 768px) {
 
     /* Afficher le menu mobile  */

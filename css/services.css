@@ -49,21 +49,20 @@
     display: inline-block;
     position: absolute;
     right: -6px;
-
     color: #60aed1;
     font-size: 13px;
 }
 
 /* -------------------- Media queries ------------------ */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
     .services-img,
     .services-list {
         flex: 0 1 auto;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
     .services {
         flex-flow: column wrap;
     }

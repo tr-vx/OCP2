@@ -5,17 +5,25 @@
     width: 100%;
     overflow-x: hidden;
 }
-
-.slider__text {
+.slider__title{ 
+    position:absolute;
     color: white;
+    z-index: 99;
+    top:30%;
+    max-width: 50%;
+    left: 10%;
+    font-size:28pt
+}
+.slider__text {
     position: relative;
-    top: 25%;
-    left: 5%;
+    top: 50%;
+    left: 10%;
 }
-/* positionnement du texte du slide2 (sans titre h1)*/
-.slider__text .container  p:first-child {
-    margin-top:20%;
+.slider__text p{
+    color: white;
+    
 }
+
 /* ---- Bloc contenant les slides ---- */
 
 .slider__slides {
@@ -136,44 +144,34 @@
 /* -------------------- Media queries ------------------ */
 
 
-@media screen and (min-width: 1281px) {
-    .slider__text {
-        top:30%;
-        width: 55%;
-    }
-    .slider__text h1 {
-        font-size: 32pt;
-    }
-    .slider__text p {
-        font-size: 15pt;
-    }
-}
-@media screen and (max-width: 1280px) {
+
+@media screen and (max-width: 1200px) {
     .slider__slides,
     .slider {
-        max-height: 55%;
+        height: 450px;
+    }
+    .slider__title {
+        top:25%;
     }
     .slider__text {
-        width: 550px;
-    }
-    .slider__text .container  p:first-child {
-        margin-top:40%;
-    }
-    .slider__text h1 {
-        font-size: 24pt;
-    }
-    .slider__text p {
-        font-size: 12pt;
+        max-width: 450px;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .slider__slides,
     .slider {
         max-height: 350px;
     }
-    .slider__text .container  p:first-child {
-        margin-top:30%;
+    .slider__title {
+        top:20%;
+        left:7%;
+        font-size:22pt
+    }
+    .slider__text {
+        max-width: 45%;
+        left:7%;
+        top:45%;
     }
 }
 
@@ -182,32 +180,28 @@
     .slider {
         height: 290px;
     }
+    .slider__title {
+        top:20%;
+        left:5%;
+        font-size:17pt
+    }
     .slider__text {
-        top: 20%;
-        width: 350px;
-    }
-    .slider__text .container  p:first-child {
-        margin-top:30%;
-    }
-    .slider__text h1 {
-        font-size: 18pt;
+        left:5%;
+        width:45%;
     }
     .slider__text p {
         font-size: 9pt;
     }
 }
-@media screen and (max-width: 529px) {
+@media screen and (max-width: 520px) {
+    .slider__title {
+        top:15%;
+        left:5%;
+        font-size:15pt;
+        width:55%
+    }
     .slider__text {
-        top: 10%;
-        width: 250px;
-    }
-    .slider__text .container  p:first-child {
-        margin-top:70%;
-    }
-    .slider__text h1 {
-        font-size: 18pt;
-    }
-    .slider__text p {
-        font-size: 9pt;
+        left:5%;
+        width:45%;
     }
 }

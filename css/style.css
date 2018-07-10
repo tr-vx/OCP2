@@ -8,7 +8,7 @@ label,
 a {
     font-family: "Roboto Regular";
     font-size: 1em;
-    color:dimgrey;
+    color: dimgrey;
 }
 
 h1,
@@ -27,19 +27,23 @@ h3 {
 }
 
 /* ligne de separation */
-hr{
-    width:60%;
-    border-color:lightgrey;
-    border-width:0.6px;
-    margin-top:0;
-    margin-bottom:0;
+
+hr {
+    width: 60%;
+    border-color: lightgrey;
+    border-width: 0.5px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-figure, figcaption{
-    padding:0;
-    margin:0
+
+figure,
+figcaption {
+    padding: 0;
+    margin: 0
 }
 
 /* separation/décoration en dessous des h2 */
+
 .separator {
     border-top: 1px solid #e6e8ea;
     text-align: center;
@@ -64,8 +68,9 @@ figure, figcaption{
     color: #60aed1;
     font-size: 17px;
 }
-.separator--bg-grey:after{
-    background:#f5f5f5;
+
+.separator--bg-grey:after {
+    background: #f5f5f5;
 }
 
 
@@ -129,14 +134,23 @@ section {
 
 .footer a {
     text-decoration: none;
-    color:deepskyblue;
+    color: deepskyblue;
 }
 
-/* ----------- media queries ----- */
+/* ----------- media queries ----------- */
 
-@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+    section {
+        /* hauteur de la navbar */
+        padding-top: 70px;
+    }
 
-@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 992px) {
     .container {
         width: 90%;
     }
@@ -150,6 +164,10 @@ section {
 @media screen and (max-width: 768px) {
     .container {
         width: 95%;
+    }
+    section {
+        /* hauteur de la navbar */
+        padding-top: 70px;
     }
     .subtitle {
         padding: 0;
