@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
+    
+    <!-- Pour la prise en compte de la taille de l'ecran -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    
+    <!-- Infos de la page -->
     <meta name="Author" content="Jonathan Noel">
     <meta name="Description" content="Site web de présentation des services et projets réalisés de l'agence de création web WebAgency">
     <meta name="Keywords" content="web;website;site web;Agence web;UX design;UI design;SEO">
@@ -11,7 +14,7 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.ico" />
 
-    <title>WebAgency</title>
+    <title> WebAgency </title>
     
     <!-- Liens des fichiers CSS -->
     <link rel="stylesheet" href="./css/fonts.css">
@@ -24,38 +27,40 @@
 </head>
 
 <body>
-    <!-- navbar -->
+   
+    <!-- Barre de navigation -> Logo + Menu -->
     <header class="navbar">
         <div class="container">
+          
+           <!-- Logo WebAgency -->
             <div class="navbar__logo">
                 <a href="#accueil">
 					<img src="./images/logo.png" alt="logo WebAgency">
 				</a>
             </div>
-
+            
+            <!-- Menu -->
             <div class="navbar__menu">
-                <!-- Affichage pour menu sur petite écran -->
+                <!-- Menu burger / Uniquement sur petite écran -->
                 <input type="checkbox" id="dropdown-menu">
                 <label for="dropdown-menu"><i class="fa fa-bars fa-2x"></i></label>
-
+                <!-- Liste des liens du menu-->
                 <ul class="main-menu">
                     <li class="main-menu__item main-menu__item--active"><a class="main-menu__link" href="#accueil">Accueil</a></li>
                     <li class="main-menu__item"><a class="main-menu__link" href="#services">Services</a></li>
                     <li class="main-menu__item"><a class="main-menu__link" href="#portfolio">Portfolio</a></li>
                     <li class="main-menu__item"><a class="main-menu__link" href="#contact">Contact</a></li>
                 </ul>
-
-
             </div>
 
         </div>
     </header>
 
-    <!-- Accueil / slider -->
+    <!-- Section "Accueil" (slider) -->
     <section id="accueil">
         <div class="slider">
             
-            <!-- boutons pour le changement de slide (label + checkbox) -->
+            <!-- Boutons changements de slide (label + checkbox) -->
             <input type="radio" name="slide-nav" id="previous-slide">
             <input type="radio" name="slide-nav" id="next-slide">
             <label for="previous-slide" class="slider__nav slider__nav--left"><i class="fa fa-angle-left"></i></label>
@@ -92,10 +97,10 @@
         </div>
     </section>
 
-    <!-- Section Services -->
+    <!-- Section "Nos Services" -->
     <section id="services">
         <div class="container">
-
+            <!-- En-tête de section -->
             <header>
                 <h2>nos services</h2>
                 <div class="separator"></div>
@@ -103,23 +108,23 @@
             </header>
             
             <div class="services">
+                <!-- Image -->
                 <aside class="services-img">
-                    <img src="./images/main-feature.png" alt="photo imac">
+                    <img src="./images/main-feature.png" alt="iMac">
                 </aside>
+                <!-- Liste des services -->
                 <ul class="services-list">
                     <li class="services-list__item">
                         <i class="fa fa-chart-line fa-2x fa-stack"></i>
                         <h3>UX design</h3>
                         <p>Optimisation de l'experience client afin de maximiser l'accomplissement de vos objectifs.</p>
                     </li>
-
                     <li class="services-list__item">
                         <i class="fa fa-cubes fa-2x"></i>
                         <!-- icon FontAwesome-->
                         <h3>UI design</h3>
                         <p>Création d'interfaces simples et ergonomiques sans mettre de coté l'originalité.</p>
                     </li>
-
                     <li class="services-list__item">
                         <i class="fa fa-chart-pie fa-2x"></i>
                         <!-- icon FontAwesome-->
@@ -128,18 +133,17 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.services -->
+            
         </div>
-        <!-- /.container -->
     </section>
     
-    <!--  ligne de separation -->
+    <!-- Ligne de separation -->
     <hr>
     
-    <!-- section Portfolio/nos projets -->
+    <!-- Section "Nos Projets" / galerie -->
     <section id="portfolio">
         <div class="container">
-
+            <!-- En-tête de section -->
             <header>
                 <h2>nos projets</h2>
                 <div class="separator separator--bg-grey"></div>
@@ -148,14 +152,14 @@
 
             <div class="gallery">
                
-                <!-- "radios hack css" pour rendre le menu fonctionnel -->
+                <!-- "Radios hack css" pour rendre le menu fonctionnel -->
                 <input type="radio" name="gallery-nav" id="Tout" checked>
                 <input type="radio" name="gallery-nav" id="Creatif">
                 <input type="radio" name="gallery-nav" id="Entreprise">
                 <input type="radio" name="gallery-nav" id="Portfolio">
                 
                 <nav class="gallery__nav">
-                    <!-- Menu de gallerie de projets-->
+                    <!-- Menu / Tri des projets -->
                     <ul class="menu">
                         <li class="menu__item">
                             <label for="Tout" class="menu__link">Tous</label>
@@ -171,83 +175,83 @@
                         </li>
                     </ul>
                 </nav>
+                
                 <div class="gallery__cards-wrapper">
-                    <!-- Liste des projets -->
+                   
                     <figure class="card projet-entreprise projet-creatif">
                         <img class="card__img" src="./images/portfolio/01.jpg" alt="Projet01">
-
                         <figcaption class="card__description">
                             <a href="#"><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Artisan lunetiers francais</h3>
                             <div class="card__text">Création du site web Artisanlunetiers.com - Artisan francais, créateur de monture de lunette sur mesure.</div>
                         </figcaption>
                     </figure>
+                    
                     <figure class="card projet-portfolio">
                         <img class="card__img" src="./images/portfolio/02.jpg" alt="Projet02">
-
                         <figcaption class="card__description">
                             <a href="#"><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Le Lapin Rauze</h3>
                             <div class="card__text">Refonte du site web lelapinrauze.com - Studio de création graphique.</div>
                         </figcaption>
                     </figure>
+                    
                     <figure class="card projet-entreprise">
                         <img class="card__img" src="./images/portfolio/03.jpg" alt="Projet03">
-
                         <figcaption class="card__description">
                             <a href="#"><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Pompadour ORIGINAL</h3>
                             <div class="card__text">Refonte du site web originalpompadour.com - Celebre chaine de coiffeur Pompadour.</div>
                         </figcaption>
                     </figure>
+                    
                     <figure class="card projet-portfolio">
                         <img class="card__img" src="./images/portfolio/04.jpg" alt="Projet04">
-
                         <figcaption class="card__description">
                             <a href="#"><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Nice Profolio</h3>
                             <div class="card__text">Création du site web profolio.com - Vendeur de template clé en main destinées aux graphistes.</div>
                         </figcaption>
                     </figure>
+                    
                     <figure class="card projet-portfolio">
                         <img class="card__img" src="./images/portfolio/05.jpg" alt="Projet05">
-
                         <figcaption class="card__description">
                             <a href="#"><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">PSD MOCKUPS STORE</h3>
-                            <div class="card__text">Création du site internet psd-mockups.com -Boutique en ligne spécialisée en vente de document compatible Photoshop.</div>
+                            <div class="card__text">Création du site internet psd-mockups.com - Boutique en ligne spécialisée en vente de document compatible Photoshop.</div>
                         </figcaption>
                     </figure>
+                    
                     <figure class="card projet-creatif">
                         <img class="card__img" src="./images/portfolio/06.jpg" alt="Projet06">
-
                         <figcaption class="card__description">
                             <a href="#"><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Architechtour</h3>
                             <div class="card__text">Création du site web ArchiTechTour.com - Agence de voyage moderne.</div>
                         </figcaption>
                     </figure>
+                    
                     <figure class="card projet-creatif">
                         <img class="card__img" src="./images/portfolio/07.jpg" alt="Projet07">
-
                         <figcaption class="card__description">
                             <a href="#"><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">Pro Pulse AI</h3>
                             <div class="card__text">Création du site internet propulse.com -  Startup specialisée en coaching assisté par inteligence artificielle. </div>
                         </figcaption>
                     </figure>
+                    
                     <figure class="card projet-entreprise">
                         <img class="card__img" src="./images/portfolio/08.jpg" alt="Projet08">
-
                         <figcaption class="card__description">
                             <a href="#"><i class="fa fa-eye"></i></a>
                             <h3 class="card__title">FreeYourSpace</h3>
                             <div class="card__text">Refonte du site freeyourspace.com - Ergonomiste, consultant pour autoentrepreneur.</div>
                         </figcaption>
                     </figure>
+                    
                     <figure class="card projet-entreprise">
                         <img class="card__img" src="./images/portfolio/full.jpg" alt="Projetfull">
-
                         <figcaption class="card__description">
                             <a href="#"><i class="fa fa-eye fa-stack"></i></a>
                             <h3 class="card__title">Burger Tonik</h3>
@@ -255,29 +259,31 @@
                         </figcaption>
                     </figure>
                     
-                </div><!-- /gallery__cards-wrapper -->
+                </div><!-- /.gallery__cards-wrapper -->
             </div><!-- /.gallery -->
 
         </div><!-- /.container -->
     </section>
     
-    <!--  ligne de separation -->
+    <!-- Ligne de separation -->
     <hr>
 
-    <!-- Contact -->
+    <!-- Section "Contact" -->
     <section id="contact">
-
+       
         <div class="map">
             <iframe class="map" title="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2583.224108176376!2d2.3476615542191226!3d48.87306681834552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1530713361343" allowfullscreen></iframe>
         </div>
+        
         <div class="bloc-contact">
             <h2 class="bloc-contact__title">Contact Info</h2>
+            <!-- Infos de contact -->
             <address class="bloc-contact__infos">
                 <span class="bold">WebAgency SAS</span><br>
 				25 Rue d'Hauteville 75010 Paris<br>
 				Tel: 01 02 03 04 05
 			</address>
-
+           <!-- formulaire de contact -->
             <form class="bloc-contact__form" action="submit">
                 <input type="text" name="Nom" id="nom" placeholder=" Nom">
                 <input type="text" name="email" id="email" placeholder=" Prenom">
@@ -285,15 +291,14 @@
                 <textarea name="message" id="message" cols="30" rows="10" placeholder=" Message"></textarea>
                 <input type="button" value="Envoyer" class="btn">
             </form>
-
         </div>
-
-
+        
     </section>
+    
+    <!-- Footer -->
     <footer class="footer">
         <p>WebAgency 2018 - Intégration web par <a href="#">Jonathan NOEL</a></p>
     </footer>
 
 </body>
-
 </html>
