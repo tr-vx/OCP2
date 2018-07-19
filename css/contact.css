@@ -60,6 +60,8 @@ section#contact {
 
 .bloc-contact__form > textarea,
 .bloc-contact__form > input[type=text] {
+    font-family: "Roboto Regular";
+    padding-left:5px;
     min-width: 100%;
     max-width: 100%;
     margin-bottom: 15px;
