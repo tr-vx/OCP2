@@ -88,12 +88,32 @@ section#contact {
         height: 396px;
     }
 }
+@media screen and (max-width: 992px) {
+    
+    .bloc-contact {
+        right: 10%;
+    }
+    
+}
 
 @media screen and (max-width: 768px) {
+    section#contact {
+        height: auto;
+    }
+    .map {
+        
+        height: 400px;
+    }
+    
     .bloc-contact {
-        width: auto;
-        right: 10%;
-        left: 10%;
+        position: relative;
+        width: 80%;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        height:auto;
+        margin:auto;
     }
     .bloc-contact__form {
         height: auto;
