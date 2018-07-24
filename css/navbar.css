@@ -37,7 +37,7 @@
     display: none;
 }
 
-/* ------------------- .menu ---------------------- */
+/* ------------------- Menu ---------------------- */
 
 .main-menu {
     display: inline-block;
@@ -62,7 +62,7 @@
 }
 
 .main-menu__item--active > a {
-    color: #60aed1;
+    color: black;
     margin-top: -2px;
 }
 
@@ -87,7 +87,11 @@
         max-height: 50px;
     }
     .main-menu__item {
+        margin-left: 20px;
         padding-top: 25px;
+    }
+    .main-menu__item--active {
+        padding-top: 23px;
     }
 }
 @media screen and (max-width: 992px) {

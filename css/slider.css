@@ -27,6 +27,7 @@
 /* ---- Bloc contenant les slides ---- */
 
 .slider__slides {
+    /* Changement de slide automatique */
     animation: move 20s infinite;
     position:relative;
     height: 550px;

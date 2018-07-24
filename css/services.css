@@ -23,6 +23,7 @@
 .services-list__item {
     padding-left: 15%;
     list-style: none;
+    margin-bottom:30px;
 }
 
 .services-list__item > i:first-child {
@@ -38,19 +39,31 @@
     text-align: center;
 }
 
-.services-list__item > h3 {
-    margin: 0;
-}
 
+/* Pour ajouter le point bleu */
 .services-list__item > i::after {
+    height:11px;
+    width:11px;
+    
     font-family: "Font Awesome";
     content: "\f111";
     /* correspond à fa-circle */
-    display: inline-block;
-    position: absolute;
-    right: -6px;
+    
     color: #60aed1;
-    font-size: 13px;
+    font-size: 12px;
+    line-height:12px;
+    
+    position: absolute;
+    right: -7px;
+    top:2.3em;
+    
+    border:2px solid white;
+    border-radius:50%;
+   
+    
+}
+.services-list__item > h3 {
+    margin: 0;
 }
 
 /* -------------------- Media queries ------------------ */
@@ -80,7 +93,7 @@
     }
     .services-list__item {
         flex: 0 1 250px;
-        padding: 0 20px;
+        padding: 0 15px;
         text-align: center;
     }
     .services-list__item > i:first-child {
@@ -92,9 +105,10 @@
         margin-bottom: 20px;
     }
     .services-list__item > i::after {
-        bottom: -38px;
-        left: -10px;
-        font-size: 10px;
+        padding:0;
+        margin:0;
+        top: 2.3em;
+        left: -8px;
     }
 }
 
