@@ -95,9 +95,8 @@
 /* style des boutons */
 .slider__nav {
     /* Bouton de changement de slide  */
-    display: block;
     position: absolute;
-    top: 45%;
+    top: 39%;
     border-radius: 50%;
     color: rgba(255, 255, 255, 0.5);
     background: rgba(0, 0, 0, 0.5);
