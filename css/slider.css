@@ -212,14 +212,48 @@
     }
 }
 @media screen and (max-width: 520px) {
+    
+    .slider {
+        min-height:290px;
+    }
+    .slider__slides{
+        /* on desactive l'animation*/
+        animation:none;
+    }
+    .slider__slide, .slider__slide--1{
+        position:relative;
+        height:100px;
+        min-height:150px;
+        width:100%;
+    }
+    
+    /*  Pour masquer 
+        les boutons de changemen de slide
+        le slide 2
+        la barre bleu sous le slide 1 */
+    .slider__nav,.slider__slide--2, .slider__slide--1::after{
+        display:none;
+    }
+    
     .slider__title {
-        top:15%;
+        top:0;
         left:5%;
+        padding:6%;
+        margin:0;
         font-size:15pt;
-        width:55%
     }
     .slider__text {
-        left:5%;
-        width:45%;
+        margin:auto;
+        top:170px;
+        left:0;
+        text-align: center;
+        width: 80%;
+        max-width:80%;
+        border:3px solid #60aed1;
+        padding:5px 5px 20px 5px;
+    }
+    .slider__text p {
+        color:darkgrey;
+        
     }
 }

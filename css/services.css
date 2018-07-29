@@ -26,6 +26,10 @@
     margin-bottom:30px;
 }
 
+.services-list__item p {
+    margin-top:5px;
+}
+
 .services-list__item > i:first-child {
     position: absolute;
     left: -10px;

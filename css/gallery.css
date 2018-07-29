@@ -43,15 +43,23 @@
     display: flex;
 }
 
+.menu__item:first-child .menu__link{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.menu__item:last-child .menu__link{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
 .menu__link {
     display: inline-block;
     text-decoration: none;
     padding: 7px 7px 7px 7px;
     color: darkslategrey;
     background: #e5e5e5;
-    border-radius: 4px;
-
     flex: 1 0 auto;
+    
 }
 
 .menu__link:hover {
@@ -59,9 +67,6 @@
     border-bottom: 3px solid #54a1c5;
     color: white;
     transition: color .3s ease;
-    cursor: pointer;
-
-    transition: color .8s ease;
 }
 
 /* Mise en marche du menu de tri des projets via radio/label */
@@ -201,13 +206,14 @@
     left: 0;
     right: 0;
     bottom: 4px;
-    padding: 10px 20px;
+    padding: 8px;
 }
 
 .card__title {
     font-family: "Roboto Bold";
     color: white;
     font-size: 9pt;
+    margin:0 0 5px 0;
 }
 
 .card__text {
@@ -222,6 +228,7 @@
 .card:hover > .card__description {
     display: block;
     background: rgba(0, 0, 0, 0.5);
+    max-height:26%;
 
 }
 
@@ -265,7 +272,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 550px) {
 
     .card {
         flex: 0 1 100%;
